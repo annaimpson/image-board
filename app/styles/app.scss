@@ -1,0 +1,49 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.container{
+  background-color:rgba(224, 225, 226, .7);
+  height: 800px;
+}
+.header{
+  height: 65px;
+  width: 100%;
+  background-color:rgba(43, 129, 185, 1);
+}
+.nav-button{
+  width: 50px;
+  height: 50px;
+  margin-left: 150px;
+  margin-top: 7px;
+  background-color: rgba(43, 129, 185, 1);
+  border: none;
+}
+
+.cancel-button,
+.add-button{
+  width: 150px;
+  height: 70px;
+}
+.cancel-button{
+  margin-left: 100px;
+}
+
+.image-input,
+.caption-input{
+  width: 305px;
+  margin-left: 100px;
+}

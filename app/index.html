@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>image board</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="toggle-button">
+        <button type="button" class="btn btn-default btn-lg nav-button">
+          <span class="glyphicon glyphicon-plus-sign plus-sign" aria-hidden="true"></span>
+        </button>
+        <nav>
+         <ul class = "mainNavDropDown clearfix">
+           <div class="input-group image-input">
+            <input type="text" class="form-control" placeholder="Image URL">
+          </div>
+          <div class="input-group caption-input">
+            <input type="text" class="form-control" placeholder="Image Caption">
+          </div>
+          <button type="button" class="btn btn-default cancel-button">Cancel</button>
+          <button type="button" class="btn btn-default add-button">Add Image</button>
+         </ul>
+       </nav>
+      </div>
+    </header>
+
+    <div class ="container">
+      <div class="row">
+
+
+        <div class = "col-xs-12 col-md-12">
+          <div class ="background"></div>
+        </div>
+
+        <div class = "col-xs-12 col-md-10" id="imagePlace"></div>
+
+      </div>
+    </div>
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
