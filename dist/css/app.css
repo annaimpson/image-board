@@ -5817,9 +5817,13 @@ button.close {
 img {
   max-width: 100%; }
 
+.dropdownBox {
+  display: inline-block;
+  background-color: white; }
+
 .container {
   background-color: rgba(224, 225, 226, 0.7);
-  height: 800px; }
+  height: 1000px; }
 
 .header {
   height: 65px;
@@ -5846,5 +5850,8 @@ img {
 .caption-input {
   width: 305px;
   margin-left: 100px; }
+
+.image-place {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */
