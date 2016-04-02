@@ -5,18 +5,19 @@ var Backbone = require('backbone');
 var handlebars = require('handlebars');
 
 var models = require('./models/images.js');
+console.log();
 var ImagesList = require('./components/listing.jsx');
+var ImageForm = require('./components/form.jsx');
 
-$('.nav-button').on('click', function(){
-    $('.mainNavDropDown').slideToggle(500);
-});
+var images = new models.ImagesCollection();
 
-// var photos = new models.ImagesModel();
-//   photos([
-//     {}
-//   ]);
-//
-// ReactDOM.render(
-//   <ImagesList collection={photos}/>,
-//   document.getElementById('imagePlace')
-// );
+images.fetch();
+  ReactDOM.render(
+    React.createElement(ImagesList, {collection: images}),
+    document.getElementById('app')
+  );
+
+ReactDOM.render(
+  React.createElement(ImageForm, {collection: images}),
+  document.getElementById('header')
+);
